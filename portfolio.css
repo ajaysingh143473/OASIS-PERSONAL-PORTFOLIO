@@ -1,0 +1,70 @@
+body{
+    background-color: black;
+    margin: 40px;
+    
+}
+.brand{
+    color: blanchedalmond;
+}
+.brand:hover{
+    box-shadow: 0 0 5px rgb(10, 11, 11),
+  0 0 25px rgb(148, 151, 151), 0 0 50px rgb(28, 102, 133),
+  0 0 100px rgb(76, 88, 87) ,0 0 200px rgb(179, 214, 214);
+  color: rgb(196, 22, 22);;
+}
+li{
+    padding: 10px;
+    color: blanchedalmond;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+}
+.card-title{
+    color: green;
+}
+.animated-text{
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+    color: blueviolet;
+  }
+.animated-text h2:nth-child(1){
+    animation: text-move 10s infinite;
+  }
+  
+@keyframes text-move{
+    0%{
+      margin-top: 0;
+    }
+    25%{
+      margin-top: -70px;
+    }
+    50%{
+      margin-top: -140px;
+    }
+    75%{
+      margin-top: -70px;
+    }
+    100%{
+      margin-top: 0;
+    }
+}
+.card-img-top {
+    max-height: 200px; /* You can adjust the max-height value as needed */
+    object-fit: cover; /* This property ensures the image maintains its aspect ratio */
+    transition: max-height 0.5s ease;
+}
+.card-img-top:hover{
+  cursor: pointer;
+  max-height: 100%;
+  max-width: 100%;
+}
+.custom-padding {
+  padding: 30px;
+}
+.card-icon i {
+  font-size: 3em; /* Adjust the size as needed */
+}
